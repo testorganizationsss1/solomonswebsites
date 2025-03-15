@@ -16,6 +16,11 @@
         y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
       })(window, document, "clarity", "script", "gx1c51abqi");
     </script>
+    <!-- Font Addition -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -92,17 +97,17 @@
 
       <!-- Header -->
       <header>
-        <div class="header-image fade">
-          <img
-            src="/assets/img/sunset_logo-modified.png"
-            alt="Sol's Portfolio"
-          />
-        </div>
         <div class="header-content">
           <h1>Solomon's Web</h1>
           <h2 class="header-tagline">
             Coder, Radio Presenter & Website Creator
           </h2>
+        </div>
+        <div class="header-image fade">
+          <img
+            src="/assets/img/sunset_logo-modified.png"
+            alt="Sol's Portfolio"
+          />
         </div>
       </header>
 
@@ -111,15 +116,31 @@
         <section id="about">
           <h2>About Me</h2>
           <p>
-            I am a self-taught programmer! I am currently working on a project
-            called
+            I am a passionate and self-taught programmer, driven by a love for
+            creating engaging and functional web experiences. My journey into
+            the world of coding began with a curiosity to understand how
+            websites work, and it has evolved into a fulfilling endeavor to
+            build innovative solutions.
+          </p>
+          <p>
+            I'm currently focused on a project called
             <a
               class="link"
               href="https://solomonsweb.github.io/"
               target="_blank"
               rel="noopener"
             >Games</a
-            >.
+            >, where I'm applying my skills in JavaScript, HTML, and CSS to
+            develop an interactive and enjoyable gaming experience. I'm
+            constantly learning and exploring new technologies to enhance my
+            abilities and create even more compelling projects.
+          </p>
+          <p>
+            Beyond coding, I'm also a radio presenter, where I get to share my
+            passion for music and engage with a diverse audience. This
+            experience has honed my communication skills and ability to connect
+            with people, which I believe is essential in both programming and
+            creating user-friendly websites.
           </p>
         </section>
 
@@ -139,7 +160,8 @@
                 <img src="/assets/img/logos/js.svg" alt="JS Logo" />
               </div>
               <p>
-                Love JavaScript, it is as you can guess the script bit in a website and it joins it all together.
+                Love JavaScript, it is as you can guess the script bit in a
+                website and it joins it all together.
               </p>
             </div>
 
@@ -155,9 +177,7 @@
               <div class="visual">
                 <img src="/assets/img/logos/html5.svg" alt="HTML5 Logo" />
               </div>
-              <p>
-                I love HTML5, its the main body of the website!
-              </p>
+              <p>I love HTML5, its the main body of the website!</p>
             </div>
 
             <div class="card">
@@ -171,16 +191,41 @@
               <div class="visual no-bdr-radius">
                 <img src="/assets/img/logos/css.svg" alt="CSS Logo" />
               </div>
-              <p>
-                Gotta like CSS it's the colors of a website!
-              </p>
+              <p>Gotta like CSS it's the colors of a website!</p>
             </div>
+          </div>
         </section>
 
         <!-- Projects Section -->
         <section id="projects">
           <h2>My Projects</h2>
           <div class="projects-container">
+            <div class="project">
+              <div class="project-item">
+                <div class="project-bg">
+                  <img src="/assets/img/games-screenshot.png" alt="Games Project" />
+                </div>
+                <div class="project-description">
+                  <h3>Games</h3>
+                  <p>
+                    A collection of web-based games built with JavaScript, HTML,
+                    and CSS.
+                  </p>
+                  <div class="project-buttons">
+                    <a
+                      href="https://solomonsweb.github.io/"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <img
+                        src="/assets/img/github-mark.svg"
+                        alt="Games GitHub Repo"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- Repeated project divs go here... -->
           </div>
         </section>
@@ -198,10 +243,14 @@
       <footer>
         <p>
           Made with
-          <img src="/assets/img/heavy-black-heart_2764.png" alt="❤️" id="hearts" />
+          <img
+            src="/assets/img/heavy-black-heart_2764.png"
+            alt="❤️"
+            id="hearts"
+          />
           by Solomon
           <br />
-          &copy; <span id="year">2025</span> Solomon.
+          © <span id="year">2025</span> Solomon.
           <script>
             document.getElementById("year").innerText =
               new Date().getFullYear();
@@ -222,15 +271,6 @@
       </a>
 
       <!-- sparse objects -->
-      <div class="object">
-        <img
-          src="/assets/img/rocket.png"
-          loading="lazy"
-          alt="Rocket"
-          id="obj-rocket"
-          style="transform: translate(100vh, 100vh)"
-        />
-      </div>
     </div>
 
     <script type="module" src="/src/main.ts"></script>
